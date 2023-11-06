@@ -3,7 +3,7 @@ package models;
 public class Gate extends BaseModel{
 
     private int gateNumber;
-    private Operator operator;
+    private Operator currentOperator;
     private GateStatus gateStatus;
     private GateType gateType;
 
@@ -15,12 +15,12 @@ public class Gate extends BaseModel{
         this.gateNumber = gateNumber;
     }
 
-    public Operator getOperator() {
-        return operator;
+    public Operator getCurrentOperator() {
+        return currentOperator;
     }
 
-    public void setOperator(Operator operator) {
-        this.operator = operator;
+    public void setCurrentOperator(Operator currentOperator) {
+        this.currentOperator = currentOperator;
     }
 
     public GateStatus getGateStatus() {
